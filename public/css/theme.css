@@ -1,0 +1,56 @@
+:root {
+    --dark-blue-background: hsl(222, 26%, 31%);
+    --dark-blue-background-toogle: hsl(223, 31%, 20%);
+    --very-dark-blue-screen-background: hsl(224, 36%, 15%);
+    --deasaturated-blue-key: hsl(225, 21%, 49%);
+    --deasaturated-blue-key-shadow: hsl(224, 28%, 35%);
+    --light-grayish-orange: hsl(30, 25%, 89%);
+    --grayish-orange: hsl(28, 16%, 65%);
+    --red: hsl(6, 63%, 50%);
+    --dark-red: hsl(6, 70%, 34%);
+    --grayish-blue: hsl(221, 14%, 31%);
+    --grayish-white: hsl(0, 0, 100%);
+}
+
+.theme-one {
+    background-color: var(--dark-blue-background);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.theme-one a {
+    color: var(--grayish-orange);
+}
+
+.theme-one #calculator-keys {
+    background-color: var(--dark-blue-background-toogle);
+    padding: 1.2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    min-height: 400px;
+}
+
+.theme-one .keys {
+    background-color: var(--light-grayish-orange);
+    color: var(--grayish-blue);
+}
+
+.theme-one .reset-btn,
+.theme-one .delete-btn {
+    background-color: var(--deasaturated-blue-key);
+    color: #fff;
+}
+
+.theme-one .equal-btn {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.theme-one #screen {
+    background-color: var(--very-dark-blue-screen-background);
+}
