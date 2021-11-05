@@ -10,16 +10,39 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css//theme.css">
     <title>Frontend Mentor | Calculator app</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="theme-one">
 
     <main id="contents">
+
         <div id="calculator-container">
+            <div id="calculator-header">
+                <div id="title">
+                    calc
+                </div>
+                <div id="themeMenuContainer">
+                    <p id="theme-text">THEME</p>
+                    <div id="theme-selector">
+                        <div id="theme-indicator">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <div id="selector">
+                            <p data-theme="theme-one" class="selector-indicator selected"></p>
+                            <p data-theme="theme-two" class="selector-indicator"></p>
+                            <p data-theme="theme-three" class="selector-indicator"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="screen">
-                <p id="screen-text">0.00</p>
+                <p id="screen-text"></p>
             </div>
             <div id="calculator-keys">
                 <span class="keys" data-key="7">7</span>

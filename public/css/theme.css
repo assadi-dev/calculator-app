@@ -1,4 +1,5 @@
 :root {
+    /**for theme one */
     --dark-blue-background: hsl(222, 26%, 31%);
     --dark-blue-background-toogle: hsl(223, 31%, 20%);
     --very-dark-blue-screen-background: hsl(224, 36%, 15%);
@@ -10,7 +11,29 @@
     --dark-red: hsl(6, 70%, 34%);
     --grayish-blue: hsl(221, 14%, 31%);
     --grayish-white: hsl(0, 0, 100%);
+    /**for theme-two */
+    --light-main-gray-background: hsl(0, 0%, 90%);
+    --grayish-toogle-background: hsl(0, 5%, 81%);
+    --very-light-gray: hsl(0, 0%, 93%);
+    --text-dark-gray: hsl(60, 10%, 19%);
+    --key-gray-backround: hsl(45, 7%, 89%);
+    --key-gray-shadow: hsl(35, 11%, 61%);
+    --key-cyan-background: hsl(185, 42%, 37%);
+    --key-cyan-shadow: hsl(185, 58%, 25%);
+    /** for theme-three */
+    --dark-violet-main-background: hsl(268, 75%, 9%);
+    --violet-toogle-background: hsl(268, 71%, 12%);
+    --text-yellow: hsl(52, 100%, 62%);
+    --violet-key-background: hsl(268, 47%, 21%);
+    --violet-key-shadow: hsl(290, 70%, 36%);
+    --dark-violet-key-background: hsl(281, 89%, 26%);
+    --dark-violet-key-shadow: hsl(285, 91%, 52%);
+    --cyan-background: hsl(176, 100%, 44%);
+    --cyan-background-shadow: hsl(177, 92%, 70%);
 }
+
+
+/** Theme one */
 
 .theme-one {
     background-color: var(--dark-blue-background);
@@ -24,33 +47,119 @@
     color: var(--grayish-orange);
 }
 
-.theme-one #calculator-keys {
+.theme-one #calculator-keys,
+.theme-one #selector {
     background-color: var(--dark-blue-background-toogle);
-    padding: 1.2rem;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    min-height: 400px;
 }
 
 .theme-one .keys {
     background-color: var(--light-grayish-orange);
     color: var(--grayish-blue);
+    box-shadow: inset 0px -4px 0px 0px var(--grayish-orange);
 }
 
 .theme-one .reset-btn,
 .theme-one .delete-btn {
     background-color: var(--deasaturated-blue-key);
     color: #fff;
+    box-shadow: inset 0px -4px 0px 0px var(--deasaturated-blue-key-shadow);
 }
 
-.theme-one .equal-btn {
+.theme-one .equal-btn,
+.theme-two .equal-btn {
     background-color: var(--red);
     color: #fff;
+    box-shadow: inset 0px -4px 0px 0px var(--dark-red);
+}
+
+.theme-one .selected,
+.theme-two .selected {
+    background-color: var(--red);
 }
 
 .theme-one #screen {
     background-color: var(--very-dark-blue-screen-background);
+}
+
+
+/** Theme  two*/
+
+.theme-two {
+    background-color: var(--light-main-gray-background);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: var(--text-dark-gray);
+}
+
+.theme-two .reset-btn,
+.theme-two .delete-btn {
+    color: #fff;
+    background-color: var(--key-cyan-background);
+    box-shadow: inset 0px -4px 0px 0px var(--key-cyan-shadow);
+}
+
+.theme-two .keys {
+    background-color: var(--key-gray-backround);
+    box-shadow: inset 0px -4px 0px 0px var(--key-gray-shadow);
+}
+
+.theme-two #screen {
+    background-color: var(--very-light-gray);
+}
+
+.theme-two #calculator-keys,
+.theme-two #selector {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-two a {
+    color: var(--red);
+}
+
+
+/** theme-three */
+
+.theme-three {
+    background-color: var(--dark-violet-main-background);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: var(--text-yellow);
+}
+
+.theme-three #selector,
+.theme-three #screen,
+.theme-three #calculator-keys {
+    background-color: var(--violet-toogle-background);
+}
+
+.theme-three .keys {
+    background-color: var(--violet-key-background);
+    box-shadow: inset 0px -4px 0px 0px var(--violet-key-shadow);
+}
+
+.theme-three .reset-btn,
+.theme-three .delete-btn {
+    color: #fff;
+    background-color: var(--dark-violet-key-background);
+    box-shadow: inset 0px -4px 0px 0px var(--dark-violet-key-shadow);
+}
+
+.theme-three .equal-btn {
+    background-color: var(--cyan-background);
+    color: hsl(198, 20%, 13%);
+    box-shadow: inset 0px -4px 0px 0px var(--cyan-background-shadow);
+}
+
+.theme-three .selected {
+    background-color: var(--cyan-background);
+}
+
+.theme-three .attribution {
+    color: white;
+}
+
+.theme-three a {
+    color: var(--text-yellow);
 }
