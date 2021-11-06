@@ -64,7 +64,7 @@ a {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    min-height: 400px;
+    height: 100%;
 }
 
 #screen {
@@ -100,7 +100,7 @@ a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    padding: 0.5rem 0.8rem;
+    padding: 0.4rem 0.8rem;
     text-align: center;
     grid-area: "keys";
     display: flex;
