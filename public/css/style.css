@@ -95,6 +95,12 @@ a {
     font-weight: 700;
 }
 
+.delete-btn,
+.equal-btn,
+.reset-btn {
+    font-weight: 700;
+}
+
 .keys,
 .delete-btn {
     border-radius: 5px;
